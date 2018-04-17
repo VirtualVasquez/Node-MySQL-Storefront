@@ -61,9 +61,30 @@ connection.connect(function(err) {
           ], 
           function(err, res){
             var total = answer.stock_quantity * cost;
-            console.log("Thank you for your purchase! Your total will be $" + total)
+            console.log("\n Thank you for your purchase! Your total will be $" + total);
+            newOrder();
          })          
         }
  			})
  		})
+ }
+
+ function newOrder() {
+  inquirer
+  .prompt(
+  {
+    type: "confirm",
+    message: "Would you like to make a new order?",
+    name: "confirm",
+    default: true
+  })
+  .then(function(answer) {
+    if (answer.confirm){
+      return showroom();
+    }
+    else {
+      console.log("\nHope to see you again soon!\n");
+      connection.end();
+    }
+  })
  }
