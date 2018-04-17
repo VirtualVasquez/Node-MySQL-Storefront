@@ -12,37 +12,37 @@ The purpose of this project was to practice utilizing Node.JS, servers, and MySQ
 
 **BEFORE YOU START:** Utilizing your Git Bash Terminal, after navigating to the folder containing the files, you'll need to install three npm packages:
 
-'''
+```
 npm init install
 npm install inquirer
 npm install mysql
-'''
+```
 
 **You will also need to be able to link into your own MySQL database into the "bamazonCustomer.js" file**
 
-[Step 1](images/startMAMP.png)
+![Step 1](images/startMAMP.png)
 Open Mamp, and click the "Start Server" button. Once that's running and stays green, click "Open start page".
 
-[Step 2](images/startphpMyAdmin.png)
+![Step 2](images/startphpMyAdmin.png)
 Once the pages loads, click the tab labeled "Tools", and then select "phpMyAdmin".
 
-[Step 3](images/startMySQL.png)
+![Step 3](images/startMySQL.png)
 On the left hand side of the window, click on "new", and then either the "SQL" or the "Import" tab. If you select the "SQL" tab, you can copy and paste everything from the "bamazon.sql" into the text box and hit go; if you select the "Import" tab, you can select you can follow the instruction listed under that tab to select the "bamazon.sql" file, and import a table like that. 
 
-[Step 4](images/startProductTable.png)
+![Step 4](images/startProductTable.png)
 If submitted correctly, a database labeled "bamazon" should be present after clicking the green arrow in the top left corner. Expand on the "bamazon" database,  select the table labeled "products" underneath in, and then select the tap labeled "Browse". You should see a table like the one pictured above.
 
-[Step 5](images/startNodeJs.png)
+![Step 5](images/startNodeJs.png)
 Go into you Git Bash terminal, and from there navigate to the folder that is storing all the project files. Input the command 'node bamazonCustomer.js'. A list of products will appear, along with their ID's and prices. 
 
-[Step 6](images/startNodeJs2.png)
+![Step 6](images/startNodeJs2.png)
 The first question will ask you to input a product ID, from 1 to 10. Afterwards, it will ask a for a quantity.
 
-If quantity asked is larger than the available stock, it will say 'Insufficient quantity!', and ask you to make another selection. If there is enough stock to meet the demand, it will log the total of your purchase.
+If quantity asked is larger than the available stock, it will say `Insufficient quantity!`, and ask you to make another selection. If there is enough stock to meet the demand, it will log the total of your purchase.
 
 Afterwards, you'll have the option to either make another order, or end the connection with the database. 
 
-[Step 7](images/endProductTable.png)
+![Step 7](images/endProductTable.png)
 After each "purchase" made, it will update the "stock_quantity" column in your "products" table in MySQL. In this example, the initial stock for pencils went from 100 to 93.
 
 ## Node Packages Used
@@ -52,7 +52,7 @@ After each "purchase" made, it will update the "stock_quantity" column in your "
 
 ## Other Technologies Used
 
--MAMP
--Node.JS
--MySQL
--Git Bash
+* MAMP
+* Node.JS
+* MySQL
+* Git Bash
