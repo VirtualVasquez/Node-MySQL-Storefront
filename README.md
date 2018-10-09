@@ -36,13 +36,13 @@ Once the pages loads, click the tab labeled "Tools", and then select "phpMyAdmin
 
 ![Step 3](images/startMySQL.png)
 
-On the left hand side of the window, click on "new", and then either the "SQL" or the "Import" tab. If you select the "SQL" tab, you can copy and paste everything from the "bamazon.sql" into the text box and hit go; if you select the "Import" tab, you can select you can follow the instruction listed under that tab to select the "bamazon.sql" file, and import a table like that. 
+On the left hand side of the window, click on "new", and then either the "SQL" or the "Import" tab. If you select the "SQL" tab, you can copy and paste everything from the "bamazon.sql" into the text box and hit go; if you select the "Import" tab, you can follow the instruction listed under that tab to select the "bamazon.sql" file, and import a table that way instead. 
 
 ### Step 4
 
 ![Step 4](images/startProductTable.png)
 
-If submitted correctly, a database labeled "bamazon" should be present after clicking the green arrow in the top left corner. Expand on the "bamazon" database,  select the table labeled "products" underneath in, and then select the tap labeled "Browse". You should see a table like the one pictured above.
+If submitted correctly, a database labeled "bamazon" should be present after clicking the green arrow in the top left corner. Expand on the "bamazon" database, select the table labeled "products" underneath in, and then select the tap labeled "Browse". You should see a table like the one pictured above.
 
 ### Step 5
 
